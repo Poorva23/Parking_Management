@@ -1,0 +1,56 @@
+.parking-space-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.parking-space-header {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.parking-space-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.parking-space-item {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parking-space-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.parking-space-item-details {
+  font-size: 1rem;
+  color: #495057;
+}
+
+.parking-space-item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.parking-space-action-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.parking-space-action-button:hover {
+  background-color: #0056b3;
+}

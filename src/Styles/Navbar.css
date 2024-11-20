@@ -1,116 +1,43 @@
-*{
-  transition: 0.5s;
-}
-body{
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
-.navbar{
-  padding: 12px;
-  width: 100%;
-  background-color: #000;
-  color: #fff;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #343a40;
+  padding: 10px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.nav-menu{
-  display: block;
-  margin: 8px 8px 8px auto;
-}
-
-.nav-logo{
-  cursor: pointer;
-}
-
-.nav-menu-item{
-  display: inline-block;
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #ffffff;
   text-decoration: none;
-  color: white;
-  width: 60px;
 }
 
-.nav-menu-item:hover{
-  color: orange;
+.navbar-nav {
+  display: flex;
+  gap: 15px;
 }
 
-.nav-menu-item::after{
-  content:'';
-  display: block;
-  height: 2px;
-  width: 0%;
-  background-color: orange;
-  transition: width 0.5s ease;
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
-.nav-menu-item:hover::after{
-  width: 100%;
+.nav-link:hover {
+  color: #adb5bd;
 }
 
-.nav-menu li{
-  display: inline-block;
-  margin: 0 10px  0 0;
-  text-align: center;
-}
-
-
-
-
-.nav-menu-mobile{
-  margin: 0 8px 0 auto;
-  cursor: pointer;
-}
-
-.menu-toggle i{
-  transition: 0.5s;
-}
-
-.nav-dropdown{
-  position: relative;
-  
-}
-.nav-dropdown .dropdown-item {
-  display: none;
-  width: 100px;
-  word-wrap: break-word;
-  color: orange;
-  background-color: #0d0b09;
-}
- 
- .nav-dropdown:hover .dropdown-item{
-   transition: 0.5s;
-   display: block;
-   position: absolute;
- }
-
-@media (max-width: 1000px){
+@media (max-width: 768px) {
   .navbar {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  .nav-logo{
-    margin-left: 0;
-    margin-right: auto;
-  }
-  .nav-menu{
-    display: block;
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav-menu li{
-    display: block;
-    margin: 0;
-    padiing: 0;
+    align-items: flex-start;
   }
   
-  .nav-menu-item::after{
-    content:'';
-    display: none;
-  }
-
-  .nav-menu-item:hover::after{
-    display: none;
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
   }
 }
