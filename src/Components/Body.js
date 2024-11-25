@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Styles/body.css'
+import '../Styles/Body.css'
 const Body = () => {
   return (
     <div>Body</div>

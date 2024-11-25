@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Styles/parkingspace.css'
+import '../Styles/ParkingSpace.css'
 
 const ParkingSpace = () => {
   return (
