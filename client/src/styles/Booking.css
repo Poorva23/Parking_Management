@@ -1,0 +1,223 @@
+/* General Page Styles */
+#booking-page {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Header Styles */
+#booking-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#booking-header h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#booking-header p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+/* Calendar Styles */
+#calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#calendar-container h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+#react-calendar {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#react-calendar__tile {
+  font-size: 1rem;
+  color: #34495e;
+  border-radius: 10px;
+}
+
+#react-calendar__tile--active {
+  background-color: #1abc9c;
+  color: white;
+}
+
+#react-calendar__tile:hover {
+  background-color: #ecf0f1;
+  cursor: pointer;
+}
+
+/* Booking Content Section */
+#booking-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* Benefits Section */
+#booking-benefits {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#booking-benefits h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#booking-benefits ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#booking-benefits ul li {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+#booking-benefits ul li::before {
+  content: '✔';
+  color: #1abc9c;
+  margin-right: 10px;
+}
+
+/* Image Gallery Section */
+#booking-images {
+  display: flex;
+  flex-direction: column;
+}
+
+#booking-images h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#image-gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#image-gallery img {
+  width: 78%;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#image-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Section */
+#booking-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#booking-form h3 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#booking-form p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+#booking-form label {
+  font-size: 1.1rem;
+  color: #34495e;
+  margin-bottom: 5px;
+  display: block;
+}
+
+#booking-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ecf0f1;
+  font-size: 1rem;
+  color: #34495e;
+  background-color: #fafafa;
+}
+
+#booking-form input:focus {
+  border-color: #1abc9c;
+  outline: none;
+}
+
+#book-now-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#book-now-btn:hover {
+  background-color: #16a085;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  #booking-content {
+      grid-template-columns: 1fr;
+  }
+
+  #image-gallery img {
+      width: 100%;
+  }
+
+  #booking-header h2 {
+    font-size: 1.6rem;
+  }
+
+  #booking-header p {
+    font-size: 0.9rem;
+  }
+
+  #booking-form button {
+    font-size: 1.1rem;
+  }
+
+  #booking-page {
+    padding: 10px;
+  }
+}
