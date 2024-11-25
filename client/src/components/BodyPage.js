@@ -121,7 +121,7 @@ const BodyPage = () => {
               alt="Booking"
               id="feature-image"
             />
-            <h3 id="feature-title">Easy Booking</h3>
+            <h3 id="feature-title">Booking</h3>
             <p id="feature-description">
               Reserve your spot hassle-free with our user-friendly booking system. Plan your trips effortlessly.
             </p>
@@ -136,7 +136,7 @@ const BodyPage = () => {
               alt="Parking"
               id="feature-image"
             />
-            <h3 id="feature-title">Smart Parking</h3>
+            <h3 id="feature-title">Parking</h3>
             <p id="feature-description">
               Locate and book secure parking spaces in your vicinity. Convenience at your fingertips.
             </p>
@@ -151,7 +151,7 @@ const BodyPage = () => {
               alt="Charging"
               id="feature-image"
             />
-            <h3 id="feature-title">Electric Charging</h3>
+            {/* <h3 id="feature-title">Electric Charging</h3>
             <p id="feature-description">
               Access electric vehicle charging stations with ease. Save time and charge efficiently.
             </p>
@@ -160,13 +160,13 @@ const BodyPage = () => {
             id="feature-card"
             onClick={() => handleNavigation("/wallet")}
             style={{ cursor: "pointer" }}
-          >
+          > */}
             <img
               src="https://img.icons8.com/color/96/000000/wallet.png"
               alt="Wallet"
               id="feature-image"
             />
-            <h3 id="feature-title">Wallet Management</h3>
+            <h3 id="feature-title">Wallet</h3>
             <p id="feature-description">
               Track your transactions, manage funds, and enjoy exclusive cashback offers with W-Parking Wallet.
             </p>
