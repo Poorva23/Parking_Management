@@ -1,44 +1,31 @@
-.darksoul-footer {
-  background-color: #343a40;
+/* Footer.css */
+.footer {
+  background-color: #333;
   color: #fff;
   padding: 20px;
-}
-
-.darksoul-footer-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.darksoul-footer-section {
-  margin-right: 50px;
-}
-
-.darksoul-footer-heading {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.d-footer-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.d-footer-li {
-  margin-bottom: 10px;
-}
-
-.d-footer-li-h {
-  text-decoration: none;
-  color: #fff;
-}
-
-.darksoul-footer-bottom {
-  margin-top: 20px;
   text-align: center;
 }
 
-.darksoul-footer-bottom-sec {
-  margin-bottom: 10px;
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: #f0a500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}

@@ -1,65 +1,81 @@
+/* Login.css */
 .login-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  background-color: #f5f5f5;
-}
-
-.login-form {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
+  max-width: 400px;
+  margin: 50px auto;
   padding: 20px;
-  border-radius: 5px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f9f9f9;
 }
 
-.login-form > * {
+h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
   margin-bottom: 15px;
+  text-align: left;
 }
 
-.login-form label {
-  font-size: 15px;
-  font-weight: 500;
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.login-form input[type="text"],
-.login-form input[type="password"] {
+input {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
   border: none;
-  border-radius: 5px;
-  background-color: #f5f5f5;
-}
-
-.login-form button {
-  width: 100%;
-  padding: 10px;
   background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.login-form button:hover {
-  background-color: #0069d9;
+button:hover {
+  background-color: #0056b3;
 }
-
-.login-form a {
-  text-decoration: none;
-  color: #007bff;
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.login-form a:hover {
-  text-decoration: underline;
+  
+label {
+  flex: 1;
+  margin-bottom: 0;
 }
-
-.login-form p {
-  font-size: 12px;
-  color: #666;
+  
+input {
+  flex: 2;
+  margin-left: 10px;
 }
+.show-password-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+  text-align: left;
+}
+#show-password {
+    text-align: left;
+  }
+.show-password-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+.show-password-container label {
+  margin-bottom: 0;
+  margin-left: 10px;
+} 
