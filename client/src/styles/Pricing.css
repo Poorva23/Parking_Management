@@ -1,81 +1,64 @@
-/* General Page Styling */
-#pricing-page {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-#pricing-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#pricing-header h2 {
-    font-size: 2.5em;
-    color: #2c3e50;
-}
-
-#pricing-header p {
-    font-size: 1.2em;
-    color: #7f8c8d;
-}
-
-/* Content Layout */
-#pricing-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-/* Pricing Form Section */
-#pricing-form {
-    background-color: #ffffff;
-    padding: 20px;
+/* src/styles.css */
+.pricing {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #e6f7ff; /* Light blue background */
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1 1 300px;
-}
-
-#pricing-form label {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .pricing h1 {
+    font-size: 28px;
+    color: #0066cc; /* Deep blue */
+    margin-bottom: 20px;
+  }
+  
+  .pricing label {
+    font-size: 18px;
+    color: #004d99; /* Medium blue */
+    margin-bottom: 10px;
     display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
-}
-
-#pricing-form select {
-    width: 100%;
+  }
+  
+  .pricing select {
+    margin: 10px 0;
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #bdc3c7;
+    font-size: 16px;
+    border: 2px solid #0066cc; /* Deep blue */
     border-radius: 5px;
-}
-
-#submit-btn {
-    background-color: #16a085;
+    background-color: #ffffff; /* White background */
+    color: #004d99; /* Medium blue */
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .pricing button {
+    padding: 12px 24px;
+    background-color: #33cc33; /* Bright green */
     color: white;
-    padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    font-size: 18px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#submit-btn:hover {
-    background-color: #1abc9c;
-}
-
-/* Pricing Info Section */
-#pricing-info {
     margin-top: 20px;
-    padding: 10px;
-    background-color: #f2f2f2;
-    border-radius: 8px;
-    font-size: 1.1em;
-}
-
-#pricing-info h3 {
-    margin-bottom: 15px;
-    color: #2c3e50;
-}
+    transition: background-color 0.3s ease;
+  }
+  
+  .pricing button:hover {
+    background-color: #2eb82e; /* Slightly darker green */
+  }
+  
+  .price-display h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #006633; /* Deep green */
+  }
+  
+  .price-display h2 span {
+    font-weight: bold;
+    color: #003d66; /* Dark blue */
+  }
+  
