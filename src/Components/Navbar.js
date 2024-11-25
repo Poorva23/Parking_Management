@@ -1,27 +1,26 @@
 import React from 'react'
-import "../styles/navbar.css"
-import { Link } from 'react-router-dom'
+
 const Navbar = () => {
   return (
-    <div>
-       <nav className="navbar">
-      <div className="navbar-logo">
-        <h1>Parking</h1>
-      </div>
-      <ul className="navbar-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="../Component/Navbar.js">Parking Space</a></li>
-        <li><a href="#services">Booking</a></li>
-        <li><Link to= "/wallet">Wallet</Link></li>
-        <li><a href="#contact">Profile</a></li>
-        <li><a href="#contact">Contact us </a></li>
-        <li><Link to="/login">Login</Link></li>
-
-
-      </ul>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id=""></input>
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Parking Space</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Wallet</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <h1 class="logo">Navbar</h1>
+        </div>
     </nav>
-      
-    </div>
   )
 }
 

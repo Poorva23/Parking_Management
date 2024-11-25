@@ -1,23 +1,54 @@
 import React from 'react'
-import "../styles/ParkingSpace.css"
+import '../Styles/parkingspace.css'
+
 const ParkingSpace = () => {
   return (
-    <div class="container">
-    <div class="parking-area">
-      <h1>Parking Space</h1>
-      <div class="parking-section">
-        <h2>2 Wheeler Parking</h2>
-        <div class="parking-grid">
-          <div class="parking-slot available">Available</div>
-          <div class="parking-slot available">Available</div>
-          <div class="parking-slot available">Available</div>
-          <div class="parking-slot available">Available</div>
-          <div class="parking-slot available">Available</div>
-          <div class="parking-slot available">Available</div>
-          </div>
-          </div>
-          </div>
-          </div>
+    <div className='mainContainerParkingSpace'>
+        <h1>Parking Space</h1>
+        <div>
+            <div>
+                <div className='twowheeler'>
+                    <h2>2 Wheeler Parking</h2>
+                    <div>
+                        <span>Available</span>
+                        <span>Available</span>
+                        <span>Available</span>
+                        <span>Available</span>
+                        <span>Available</span>
+                        <span>Available</span>
+                        <span>Available</span>
+                        <span>Available</span>
+                    </div>
+                </div>
+                <div className='threewheeler'>
+                    <h2>3 Wheeler Parking</h2>
+                    <div>
+                        <span>Available</span>
+                        <span>Available</span>
+                        <span>Available</span>
+                        <span>Available</span>
+                        <span>Available</span>
+                        <span>Available</span>
+                        <span>Available</span>
+                        <span>Available</span>
+                    </div>
+                </div>
+                <div className='fourwheeler'>
+                    <h2>4 Wheeler Parking</h2>
+                    <div>
+                        <span>Available</span>
+                        <span>Available</span>
+                        <span>Available</span>
+                        <span>Available</span>
+                        <span>Available</span>
+                        <span>Available</span>
+                        <span>Available</span>
+                        <span>Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   )
 }
 
