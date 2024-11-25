@@ -1,29 +1,23 @@
-import './App.css';
-import ParkingSpace from './components/Parkingspace';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
-import Login from './components/Login';
-import SignUp from './components/SignUp';
-import Wallet from './components/Wallet';
+import './Styles/navbar.css';
+import './Styles/footer.css';
+import Navbar from './Component/Navbar';
+import Footer from './Component/Footer';
+import Body from './Component/Body';
+import SignUp from './Component/SignUp';
+// import Login from './Component/Login';
+import ParkingSpace from './Component/ParkingSpace';
 
 function App() {
   return (
-    <Router>
-  <div className="App">
-    <Navbar />
-    <Routes>
-      
-      <Route path='/signup'element={<SignUp/>}/>
-      <Route path="/login" element={<Login />} />
-      <Route path='/Wallet'element={<Wallet/>}/>
-      <Route path='/parkingspace' element={<ParkingSpace/>}/>
-    </Routes>
-    <Footer />
- </div>
-   </Router>
-
-
+    <div className="App">
+      <Navbar/>
+      <div style={{ paddingTop: '64px' }}> {/* Adjust based on your navbar height */}
+        <SignUp />
+        <Body />
+        <ParkingSpace />
+      </div>
+      <Footer />
+    </div>
   );
 }
 
