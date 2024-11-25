@@ -1,64 +1,114 @@
-/* src/styles.css */
+
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.pricing-page {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Vehicle Selection Section */
+.vehicle-selection {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: left;
+}
+
+.vehicle-selection label {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-top: 10px;
+  display: block;
+}
+
+.vehicle-selection select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #bdc3c7;
+}
+
+.calculated-price {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #16a085;
+  text-align: center;
+}
+
+/* Pricing Section */
 .pricing {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #e6f7ff; /* Light blue background */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .pricing h1 {
-    font-size: 28px;
-    color: #0066cc; /* Deep blue */
-    margin-bottom: 20px;
-  }
-  
-  .pricing label {
-    font-size: 18px;
-    color: #004d99; /* Medium blue */
-    margin-bottom: 10px;
-    display: block;
-  }
-  
-  .pricing select {
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #0066cc; /* Deep blue */
-    border-radius: 5px;
-    background-color: #ffffff; /* White background */
-    color: #004d99; /* Medium blue */
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .pricing button {
-    padding: 12px 24px;
-    background-color: #33cc33; /* Bright green */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .pricing button:hover {
-    background-color: #2eb82e; /* Slightly darker green */
-  }
-  
-  .price-display h2 {
-    margin-top: 20px;
-    font-size: 24px;
-    color: #006633; /* Deep green */
-  }
-  
-  .price-display h2 span {
-    font-weight: bold;
-    color: #003d66; /* Dark blue */
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.pricing-plan {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.pricing-plan h2 {
+  color: #16a085;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.pricing-plan p {
+  color: #3498db;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.pricing-plan ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pricing-plan li {
+  color: #7f8c8d;
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.pricing-plan button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.pricing-plan button:hover {
+  background-color: #2980b9;
+}
