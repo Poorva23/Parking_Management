@@ -8,13 +8,13 @@ const Footer = () => {
         <div id="footer-about">
           <h2 id="about-heading">About Us</h2>
           <p id="about-description">
-            We are dedicated to providing an efficient and user-friendly parking management system that simplifies the parking experience for users. Our project aims to streamline parking operations, making it easier for drivers to find available spaces and manage their bookings seamlessly.
+          We are committed to delivering an efficient and intuitive parking management system that enhances the overall parking experience. Our project is designed to simplify parking operations, enabling drivers to effortlessly find available spaces and manage their bookings with ease.
           </p>
         </div>
         <div id="footer-contact">
           <h2 id="contact-heading">Contact Us</h2>
-          <p id="contact-email">Email: <a href="mailto:support@myapp.com">rachitwalia@myapp.com</a></p>
-          <p id="contact-phone">Phone: <a href="tel:+1234567890">+91 1234567890</a></p>
+          <p id="contact-email">Email: <a href="mailto:support@gmail.com">poorva23@gmail.com</a></p>
+          <p id="contact-phone">Phone: <a href="tel:+9182736450">+91 9874567776</a></p>
         </div>
         <div id="footer-social">
           <h2 id="social-heading">Follow Us</h2>

@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -7,7 +5,7 @@ import Footer from './components/Footer';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
 import Wallet from './components/Wallet';
-import Charging from './components/Charging';
+import Pricing from './components/Pricing';
 import WalletNav from './components/walletNav';
 import Booking from './components/Booking';
 import BodyPage from './components/BodyPage';
@@ -27,7 +25,7 @@ function App() {
         <Route path="/wallet" element={<Wallet />} />
         <Route path="/wallet-nav" element={<WalletNav />} />
         <Route path="/booking" element={<Booking />} />
-        <Route path="/charging" element={<Charging />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/parking" element={<ParkingPage />} />
         <Route path="*" element={<div>404: Page Not Found</div>} />
       </Routes>

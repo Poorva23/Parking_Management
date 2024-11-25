@@ -13,12 +13,12 @@ const Navbar = () => {
     <nav id="navbar">
       <div id="navbar-container">
         <div id="navbar-logo" onClick={handleLogoClick} style={{ cursor: "pointer" }}>
-          <img
+          {/* <img
             src="https://cdn.dribbble.com/users/718428/screenshots/3136901/wheels.gif"
             alt="Animated Car Logo"
             id="logo-image"
-          />
-          <h1>W-Parking</h1>
+          /> */}
+          <h1>Parking Management</h1>
         </div>
         <ul id="navbar-menu">
           <li id="navbar-item">
@@ -28,7 +28,7 @@ const Navbar = () => {
             <Link to="/parking">Parking</Link>
           </li>
           <li id="navbar-item">
-            <Link to="/charging">Charging</Link>
+            <Link to="/pricing">Pricing</Link>
           </li>
           <li id="navbar-item">
             <Link to="/wallet-nav">Wallet</Link>

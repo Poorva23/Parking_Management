@@ -19,7 +19,7 @@
 
 .amount {
   font-size: 1.5em;
-  color: #28a745;
+  color: #0f5b99;
   font-weight: bold;
 }
 
@@ -55,7 +55,7 @@ button:hover {
 
 #wallet-message {
   margin-top: 10px;
-  color: #28a745;
+  color: #285da7;
   font-weight: bold;
   font-size: 1.1em;
 }

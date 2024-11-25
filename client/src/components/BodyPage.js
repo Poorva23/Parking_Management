@@ -95,16 +95,16 @@ const BodyPage = () => {
       {/* Hero Section */}
       <section id="hero-section">
         <div id="hero-content">
-          <h1>Welcome to W-Parking</h1>
+          <h1>Welcome to Parking Management</h1>
           <p>Your one-stop solution for booking, parking, charging, and managing your wallet.</p>
           <button id="hero-button">Get Started</button>
-          <p id="hero-subtext">A parking management system made by Rachit Walia.</p>
+          <p id="hero-subtext"></p>
         </div>
-        <img
+        {/* <img
           src="https://thumbs.dreamstime.com/b/initial-rw-letter-logo-creative-modern-business-typography-vector-template-design-197849328.jpg"
           alt="Hero Illustration"
           id="hero-image"
-        />
+        /> */}
       </section>
 
       {/* Features Section */}

@@ -15,8 +15,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: linear-gradient(to right, #007bff, #0056b3);
-  color: white;
+  background: linear-gradient(to right, #c6538f, #0d67c6);
+  color: rgb(237, 241, 245);
 }
 
 #hero-content {
@@ -34,7 +34,7 @@
 }
 
 #hero-button {
-  background-color: #ffc107;
+  background-color: #d4c5f0;
   color: #333;
   padding: 10px 20px;
   border: none;
